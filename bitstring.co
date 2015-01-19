@@ -263,7 +263,7 @@ BitString import {SEEK_ABSOLUTE, SEEK_RELATIVE, SEEK_FROM_EOF}
 if typeof define is 'function' and define.amd
     define 'bitstring', [], (require, exports, module) -> module.exports = BitString
 else if exports?
-    exports = module.exports = BitString if module?.exports
+    module.exports = BitString if module?.exports
     exports.BitString = BitString
 else
     window?.BitString = BitString
